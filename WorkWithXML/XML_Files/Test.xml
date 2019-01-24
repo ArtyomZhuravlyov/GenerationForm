@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding='windows-1251'?>
 <Library Name="TestLib">
-  <Test4 Code="Form" Name="Menu2"  Width="603" Height="199" MinWidth="592" MinHeight="145"   >
+  <Test4 Code="Form" Name="Menu2"  Width="603" Height="199" MinWidth="592" MinHeight="145"  ToolButton="Y" >
     <Label Name="Label1" Caption="Сертификат #" Top="56" Left="8" Height="21" Width="115" />
     <Edit Name="Edit1"  Top="56" Left="136" Height="21" Width="448" DblClickItem="Выбор"/>
     <Edit Name="Edit2" ReadOnly="Y" Top="32" Left="136" Height="21" Width="136" />

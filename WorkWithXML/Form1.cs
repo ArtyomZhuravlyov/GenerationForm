@@ -254,7 +254,7 @@ namespace WorkWithXML
                     box.SelectedIndexChanged += comboBox_SelectedIndexChanged;
                 }
             }
-            if(findName == false) MessageBox.Show("элемент с Именем" + dblClickEdit + "не найден" );
+            if(findName == false) MessageBox.Show("элемент с Именем " + dblClickEdit + " не найден" );
         }
 
         //выбор во временном combobox переходит в textbox
@@ -280,14 +280,19 @@ namespace WorkWithXML
         
         void btn_Click_OpenForm(object sender, EventArgs e)
         {
+            bool findname = false;
+            string name_Form = ((Button1)(sender)).Form;
+
             foreach (Form2 child in childForms)
             {
-                if (((Button1)(sender)).Form == child.Name)
+                if (name_Form == child.Name)
                 {
-                    child.MdiParent = this;
-                    child.Show();
+                    findname = true;
+                    child.StartPosition = FormStartPosition.CenterScreen;
+                    child.ShowDialog();
                 }                   
-            }         
+            }
+            if (findname == false) MessageBox.Show("форма с Именем " + name_Form + " не найдена");
         }
 
     }
