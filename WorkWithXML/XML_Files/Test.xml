@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding='windows-1251'?>
+<Library Name="TestLib">
+  <Test4 Code="Form" Name="Menu2"  Width="603" Height="199" MinWidth="592" MinHeight="145"  ToolButton="Y" >
+    <Label Name="Label1" Caption="Сертификат #" Top="56" Left="8" Height="21" Width="115" />
+    <Edit Name="Edit1"  Top="56" Left="136" Height="21" Width="448" DblClickItem="Выбор"/>
+    <Edit Name="Edit2" ReadOnly="Y" Top="32" Left="136" Height="21" Width="136" />
+    <Button Result="1" Name="Button1" Caption="ОК" Top="144" Left="368" Height="32" Width="96" />
+    <Button Result="2"  Name="Button2" Caption="Отмена" Top="144" Left="480" Height="32" Width="96" />
+  </Test4>
+  <Test4 Code="DblClickItem" Name="Выбор" Items="1,2,3,4,5,67,0,8,9"/>
+  <Test4 Code="Form" Name="Menu1"  Width="603" Height="199" MinWidth="592" MinHeight="145" ToolButton="Y" >
+    <Button Result="3" Name="Button1" Caption="Открыть Form2" Form="Form2" Top="144" Left="368" Height="32" Width="96" />
+  </Test4>
+  <Test4 Code="Form" Name="Form2"  Width="603" Height="199" MinWidth="592" MinHeight="145" ToolButton="N" >
+    <Label Name="Label1" Caption="ОК" Top="56" Left="8" Height="21" Width="115" />
+  </Test4>
+</Library>
