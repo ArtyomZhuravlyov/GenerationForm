@@ -268,6 +268,7 @@ namespace WorkWithXML
             }
         }
 
+        /***********************  действия по кнопке ****************/
         private void message_OK(object sender, EventArgs e)
         {
             MessageBox.Show("OK");
