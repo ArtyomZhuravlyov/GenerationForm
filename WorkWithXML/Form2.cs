@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WorkWithXML
@@ -15,8 +10,7 @@ namespace WorkWithXML
         
         public Form2()
         {
-            InitializeComponent();
-            
+            InitializeComponent();           
         }
 
         public string ToolButton { get; private set; }
@@ -32,9 +26,9 @@ namespace WorkWithXML
             this.Icon = new Icon(@"../../Icon/point_aletter_ai_7142.ico");
             
         }
+        //так как формы при закрытии удаляются(не полностью),а они созданы динамически проще их просто скрывать
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
-
             if (e.CloseReason.ToString() == "UserClosing")
             {
                 e.Cancel = true;
